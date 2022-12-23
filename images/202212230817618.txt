@@ -1,0 +1,94 @@
+1、引入全民健身优惠券代码
+2、查看豫动中原后台
+3、配合运营处理问题
+
+ @baipiaoi 
+
+今日越城 3K积分兑换话费
+小豆苗  3k豆兑换支付宝
+碳普惠 800币
+福特8K结束跑
+
+饿了么
+
+# a123456
+dc483e80a7a0bd9ef71d8cf973673924
+
+@Resource
+private SysParamService sysParamService;
+if (sysParamService.getIsLog()) {
+
+}
+
+
+rediskey：
+# -1 取优惠券id
+subsidyCoupon1731
+# 过期优惠券
+onlineForReserveAndVerification###680361*
+# 实名认证
+member_info_certification_status*
+
+nohup java -jar /www/wwwroot/ruoyiapi/Ry-app-1.0.0-SNAPSHOT.jar > /www/wwwroot/ruoyiapi/app.log 2>&1 &
+
+=====================测试=====================：
+
+nohup java -jar /www/ydzy/bg/bg-controller-1.0.0-SNAPSHOT.jar  > /www/ydzy/logs/bg.log 2>&1 &
+
+
+tail -90f /www/ydzy/logs/bg.log
+
+
+nohup java -jar /www/ydzy/app/app-controller-1.0.0-SNAPSHOT.jar > /www/ydzy/logs/app.log 2>&1 &
+
+tail -90f /www/ydzy/logs/app.log
+
+
+
+nohup java -jar /www/ydzy/venue/app-venue-controller-1.0.0-SNAPSHOT.jar  > /www/ydzy/logs/app-venue.log 2>&1 &
+
+tail -90f /www/ydzy/logs/app-venue.log
+
+
+nohup java -jar /www/ydzy/zf/bg-govt-controller-1.0.0-SNAPSHOT.jar  > /www/ydzy/logs/bg-govt.log 2>&1 &
+
+
+tail -90f /www/ydzy/logs/bg-govt.log
+
+
+=====================正式=====================：
+bg-govt-0826.jar
+
+nohup java -jar -Xms256m -Xmx512m -XX:PermSize=256M -XX:MaxPermSize=512M /www/ydzy/gov/bg-govt-926.jar > /www/ydzy/logs/bg-govt.log 2>&1 &
+
+tail -90f /www/ydzy/logs/bg-govt.log
+
+=========================================
+
+nohup java -jar app-controller-19092.jar --server.port=19092  > /www/ydzy/logs/app.log 2>&1 &
+
+tail -90f /www/ydzy/logs/app.log
+
+=========================================
+nohup java -jar -Xms512m -Xmx2048m -XX:PermSize=512M -XX:MaxPermSize=2048M /www/ydzy/venue/bg-venue-controller1212.jar  > /www/ydzy/logs/bg-venue.log 2>&1 &
+
+tail -90f /www/ydzy/logs/bg-venue.log
+
+
+
+
+
+=========================================
+bg-controller-0915.jar
+
+nohup java -jar -Xms1024m -Xmx2048m -XX:PermSize=1024M -XX:MaxPermSize=2048M /www/ydzy/bg/bg0922.jar > /www/ydzy/logs/bg.log 2>&1 &
+
+
+
+
+tail -90f /www/ydzy/logs/bg.log
+
+
+RedisKeyExpirationListener
+
+/fastCallBack
